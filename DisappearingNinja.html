@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DisappearingNinja</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("img").click(function(){
+                    $(this).fadeOut(1000);
+                });
+                $("button").click(function(){
+                    $("img").fadeIn(1000);
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <img style="width:200px" src="ninja.png" alt="ninja1">
+        <img style="width:200px" src="ninja.png" alt="ninja2">
+        <img style="width:200px" src="ninja.png" alt="ninja3">
+        <img style="width:200px" src="ninja.png" alt="ninja4">
+        <img style="width:200px" src="ninja.png" alt="ninja5">
+        <img style="width:200px" src="ninja.png" alt="ninja6">
+        <img style="width:200px" src="ninja.png" alt="ninja7">
+        <img style="width:200px" src="ninja.png" alt="ninja8">
+        <button>Restore</button>
+    </body>
+</html>
